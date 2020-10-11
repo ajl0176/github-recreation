@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./styles.css">
-    <title></title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+<link rel="stylesheet" href="./styles.css">
+
+<body>
+  <div class='container'>
+    <div class="row">
+      <div class="col-4">
+        <section id="profile"></section>
+        <script id="profile-template" type="text/x-handlebars-template">
+          <img class="profile-image" src="{{profile.avatar_url}}" alt="">
+            <div class="profile-login" style="color: #666"> {{profile.login}} </div>
+            <br>
+            <button class="button button1">Edit Profile</button>
+            <br>
+            <br>
+            <hr class="h1">
+            <br>
+
+          <section id="organizations">
+            <h6>Organizations</h6>
+            <img class="org-image" src="https://avatars0.githubusercontent.com/u/69909898?s=60&v=4" alt="">
+          </section>
+          </script>
+    </div>
+
+        <div class="col-8">
+          <ul class="repositories" style="width: auto; height:1400px">
+            <script id="repo-template" type="text/x-handlebars-template">
+              {{#each repos}}
+                <div class="repo-content">
+                <li class="repo">
+                    <div class="name">{{this.name}}</div>
+                    <button class="button button2"><i class="far fa-star"></i>  Star</ubtton>
+                  </li>
+                  </div>
+                {{/each}}
+            </script>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+<script id="org-template" type="text/x-handlebars-template">
+  <h5 class="org-title">Organizations</h5>
+  <img class='organizations-img' src={{this.avatar_url}} alt="">
+  <span class="name">{{this.name}}</span>
+</script>
 
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
 
-    <script>src="main.js"</script>
-  </body>
 </html>

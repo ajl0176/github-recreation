@@ -1,0 +1,75 @@
+.col-6 {
+  flex: 0;
+}
+
+.profile-image {
+  border-radius: 70%;
+  width: 285px;
+  margin-top: 75px;
+}
+
+.profile-login {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.repositories {
+    display: block;
+    list-style-type: none;
+    margin-top: 200px;
+    font-size: 25px;
+    /* width: 50px; */
+    margin-left: -60px;
+
+}
+   .repo-content {
+     height: 75px;
+     margin-bottom: 15px;
+     padding-top: 13px;
+     border-top: 1px solid lightgray;
+     color: blue;
+     font-weight:500;
+     font-size:22px;
+
+   }
+   .repo {
+     display: flex;
+     justify-content: space-between;
+   }
+
+   .button.button2{
+     display: flex;
+     position:relative;
+     padding: 1px 10px;
+     align-items: center;
+     border-width: thin;
+     border-color: lightgray;
+     background-color: #FAFBFC;
+     font-size: 12px;
+     text-indent: 8px;
+
+   }
+
+   .button {
+     position: absolute;
+     padding: 1px 100px;
+     border-radius: 8px;
+     font-size: 15px;
+     border-width: thin;
+     border-color: lightgray;
+     background-color: #FAFBFC;
+   }
+
+   .org-image {
+     width: 32px;
+     height:32px;
+   }
+
+   .h1 {
+     display: absolute;
+     margin-right: 68px;
+   }
+
+.far.fa-star {
+  float:left;
+}
